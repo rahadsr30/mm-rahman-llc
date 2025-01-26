@@ -26,10 +26,10 @@ export default {
       addUtilities({});
       addComponents({
         ".text-title": {
-          "@apply text-[80px] leading-[96px] font-semibold": {},
+          "@apply text-[36px] lg:text-[80px] leading-[96px] font-semibold": {},
         },
         ".text-hero": {
-          "@apply text-[40px] leading-[150%] font-normal": {},
+          "@apply text-[40px] leading-[52px] font-normal": {},
         },
         ".text-body-title": {
           "@apply text-[18px] leading-[150%] font-semibold": {},
@@ -40,8 +40,8 @@ export default {
         ".text-body-sm": {
           "@apply text-[16px] leading-[150%] font-medium": {},
         },
-        ".container": {
-          "@apply max-w-[1220px] w-full mx-auto px-4 sm:px-6 lg:px-8": {},
+        ".wrapper": {
+          "@apply max-w-[1220px] w-full mx-auto px-4": {},
         },
         ".py-section": {
           "@apply py-20 md:py-28 lg:py-32": {},
