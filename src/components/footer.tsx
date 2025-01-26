@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-          {/* Column 4 */}
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">

@@ -94,7 +94,7 @@ export default function Home() {
             <h2 className="text-title text-[#3A3A3F] font-public">
               Our Brands
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center mt-6 lg:mt-10">
               <div className="bg-black p-6">
                 <Image src={logo} alt="" width={247} height={32} />
                 <Image
@@ -105,7 +105,7 @@ export default function Home() {
                   className="mx-auto mt-10"
                 />
                 <button className="flex items-center gap-2 border border-[#585962] px-6 py-3 rounded-3xl text-body-title text-white mx-auto mt-10 font-public">
-                  <span>Discover More</span>
+                  <span>Explore Now</span>
                   <FaRegArrowAltCircleRight />
                 </button>
                 <div className="gap-3 flex flex-wrap items-center justify-center mt-6 lg:mt-10">
@@ -135,7 +135,7 @@ export default function Home() {
                   className="mx-auto mt-10"
                 />
                 <button className="flex items-center gap-2 border border-[#585962] px-6 py-3 rounded-3xl text-body-title text-white mx-auto mt-10 font-public">
-                  <span>Discover More</span>
+                  <span>Explore Now</span>
                   <FaRegArrowAltCircleRight />
                 </button>
                 <div className="gap-3 flex flex-wrap items-center justify-center mt-6 lg:mt-10">
