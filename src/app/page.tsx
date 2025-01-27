@@ -245,7 +245,7 @@ export default function Home() {
 
         <section id="articles" className="bg-black py-section">
           <div className="wrapper max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-title font-public text-white text-center">
+            <h1 className="text-title font-public text-white">
               Latest News & Announcements
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
