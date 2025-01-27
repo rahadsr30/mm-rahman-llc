@@ -237,7 +237,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-black py-10">
+        <section className="bg-black py-section">
           <div className="wrapper max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-2xl md:text-4xl font-bold text-white text-center">
               Latest News & Announcements
