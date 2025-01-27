@@ -12,10 +12,32 @@ import news3 from "@/assets/news3.png";
 import news4 from "@/assets/news4.png";
 import news5 from "@/assets/news5.png";
 import avater from "@/assets/avaterr.png";
+import businessOptimization from "@/assets/metting.png";
+import marketing from "@/assets/Marketing.png";
+import technology from "@/assets/Technology.png";
+import business from "@/assets/business.png";
 
 import logo from "@/assets/logo.png";
 import Footer from "@/components/footer";
 
+const advantageCards = [
+  {
+    title: "Marketing and Branding",
+    description: "Creating impactful strategies to elevate your brand.",
+    image: marketing,
+  },
+  {
+    title: "Technology Solutions",
+    description: "Empowering your business with innovative technology.",
+    image: technology,
+  },
+  {
+    title: "Business Consulting",
+    description:
+      "Comprehensive strategies to drive growth and optimize performance.",
+    image: business,
+  },
+];
 const rabfyBrands = [
   {
     title: "80+",
@@ -84,7 +106,63 @@ export default function Home() {
         </header>
 
         <section className="bg-[url('/advantageBg.png')] bg-cover bg-center">
-          <div className="wrapper py-section"></div>
+          <div className="wrapper py-section ">
+            <div className="flex justify-between lg:flex-row flex-col-reverse items-center gap-8 lg:gap-20">
+              <div className="relative group w-full lg:w-1/2 overflow-hidden rounded-lg">
+                <div className="relative w-full h-64 ">
+                  <Image
+                    src={businessOptimization}
+                    alt=""
+                    layout="fill"
+                    objectFit="cover"
+                    className="transition-transform duration-300 group-hover:scale-110"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent group-hover:bg-opacity-75 transition duration-300" />
+                <div className="absolute bottom-0 left-0 w-full text-start text-white p-4 z-10">
+                  <h3 className="text-lg lg:text-xl font-bold mb-2">
+                    Business Process Optimization
+                  </h3>
+                  <p className="text-sm lg:text-base">
+                    Streamline your operations and improve efficiency with our
+                    expert process optimization services.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <h2 className="text-title font-public text-white">
+                  Our Expertise, Your Advantage
+                </h2>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 lg:mt-8">
+              {advantageCards.map((card, index) => (
+                <div
+                  key={index}
+                  className="relative group overflow-hidden rounded-lg"
+                >
+                  <div className="relative w-full h-64">
+                    <Image
+                      src={card.image}
+                      alt={card.title}
+                      layout="fill"
+                      objectFit="cover"
+                      className="transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-transparent p-4">
+                      <h3 className="lg:text-xl text-lg font-semibold text-white mb-1">
+                        {card.title}
+                      </h3>
+                      <p className="text-white text-sm lg:text-base">
+                        {card.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         <section className="bg-[url('/blankBg.png')] bg-cover bg-center py-section"></section>
@@ -159,98 +237,138 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-black">
-          <div className="wrapper py-section">
-            <h1 className="text-[36px] lg:text-[80px] font-semibold text-white font-public">
+        <section className="bg-black py-10">
+          <div className="wrapper max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 className="text-2xl md:text-4xl font-bold text-white text-center">
               Latest News & Announcements
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-6 mt-14">
-              <div className="bg-[#FAFAFA]">
-                <Image src={news1} alt="" className="w-full h-[238px]" />
-                <div className="space-y-1 md:space-y-2 px-3 md:px-6 mt-2 md:mt-4">
-                  <h2 className="text-sm md:text-base text-[#374151] font-bold">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div className="relative w-full h-60">
+                  <Image
+                    src={news1}
+                    alt="AI in Education"
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
+                <div className="p-5">
+                  <h2 className="text-lg font-semibold text-gray-800">
                     AI in Education: Revolutionizing How We Learn
                   </h2>
-                  <p className="text-sm md:text-base text-[#506079] font-medium">
+                  <p className="text-sm text-gray-600 mt-2">
                     Discover how AI is revolutionizing education with
                     personalized learning and automated grading.
                   </p>
-                </div>
-                <div className="flex items-center gap-2 mt-4 md:mt-6 px-3 md:px-6 pb-3">
-                  <Image src={avater} alt="" className="w-8 h-8" />
-                  <div>
-                    <h5 className="text-sm md:text-base text-[#374151] font-bold">
-                      Riaz Ahmed
-                    </h5>
-                    <p className="text-sm text-[#506079] font-medium">
-                      Nov 15, 2024
-                    </p>
+                  <div className="flex items-center gap-3 mt-4">
+                    <Image
+                      src={avater}
+                      alt=""
+                      width={40}
+                      height={40}
+                      className="rounded-full"
+                    />
+                    <div>
+                      <h5 className="text-sm font-medium text-gray-800">
+                        Riaz Ahmed
+                      </h5>
+                      <p className="text-xs text-gray-500">Nov 15, 2024</p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="bg-[#FAFAFA]">
-                <Image src={news2} alt="" className="w-full h-[238px]" />
-                <div className="space-y-1 md:space-y-2 px-3 md:px-6 mt-2 md:mt-4">
-                  <h2 className="text-sm md:text-base text-[#374151] font-bold">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div className="relative w-full h-60">
+                  <Image
+                    src={news2}
+                    alt="Online Learning Trends"
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
+                <div className="p-5">
+                  <h2 className="text-lg font-semibold text-gray-800">
                     Top 5 Trends Shaping Online Learning in 2024
                   </h2>
-                  <p className="text-sm md:text-base text-[#506079] font-medium">
+                  <p className="text-sm text-gray-600 mt-2">
                     From gamification to microlearning, explore the trends that
                     are redefining the future education.
                   </p>
-                </div>
-                <div className="flex items-center gap-2 mt-4 md:mt-6 px-3 md:px-6 pb-3">
-                  <Image src={avater} alt="" className="w-8 h-8" />
-                  <div>
-                    <h5 className="text-sm md:text-base text-[#374151] font-bold">
-                      Mahamudul Hasan
-                    </h5>
-                    <p className="text-sm text-[#506079] font-medium">
-                      Nov 15, 2024
-                    </p>
+                  <div className="flex items-center gap-3 mt-4">
+                    <Image
+                      src={avater}
+                      alt=""
+                      width={40}
+                      height={40}
+                      className="rounded-full"
+                    />
+                    <div>
+                      <h5 className="text-sm font-medium text-gray-800">
+                        Rahad Ahmed
+                      </h5>
+                      <p className="text-xs text-gray-500">Nov 15, 2024</p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="hidden lg:flex flex-col gap-6">
-                <div className="flex items-center justify-center gap-4 bg-[#FAFAFA]">
-                  <div className="space-y-4 p-3">
-                    <h5 className="text-sm md:text-base text-[#374151] font-bold">
+
+              <div className="hidden lg:block space-y-6">
+                <div className="flex items-center gap-4 bg-white rounded-lg shadow-md overflow-hidden">
+                  <div className="relative w-28 h-28">
+                    <Image
+                      src={news3}
+                      alt="The Rise of Lifelong Learning Platforms"
+                      layout="fill"
+                      objectFit="cover"
+                    />
+                  </div>
+                  <div>
+                    <h5 className="text-sm font-semibold text-gray-800">
                       The Rise of Lifelong Learning Platforms
                     </h5>
-                    <p className="text-[12px] text-sm font-medium text-[#506079]">
-                      Rahad Ahmed
-                    </p>
+                    <p className="text-xs text-gray-500 mt-1">Mahmudul Hasan</p>
                   </div>
-                  <Image src={news3} alt="" width={200} height={126} />
                 </div>
-                <div className="flex items-center justify-center gap-4 bg-[#FAFAFA]">
-                  <div className="space-y-4 p-3">
-                    <h5 className="text-sm md:text-base text-[#374151] font-bold">
-                      The Rise of Lifelong Learning Platforms
-                    </h5>
-                    <p className="text-[12px] text-sm font-medium text-[#506079]">
-                      Rokibul Islam
-                    </p>
+                <div className="flex items-center gap-4 bg-white rounded-lg shadow-md overflow-hidden">
+                  <div className="relative w-28 h-28">
+                    <Image
+                      src={news4}
+                      alt="Student Success Stories"
+                      layout="fill"
+                      objectFit="cover"
+                    />
                   </div>
-                  <Image src={news4} alt="" width={200} height={126} />
+                  <div>
+                    <h5 className="text-sm font-semibold text-gray-800">
+                      Student Success Stories
+                    </h5>
+                    <p className="text-xs text-gray-500 mt-1">Rakib Ahmed</p>
+                  </div>
                 </div>
-                <div className="flex items-center justify-center gap-4 bg-[#FAFAFA]">
-                  <div className="space-y-4 p-3">
-                    <h5 className="text-sm md:text-base text-[#374151] font-bold">
-                      The Rise of Lifelong Learning Platforms
-                    </h5>
-                    <p className="text-[12px] text-sm font-medium text-[#506079]">
-                      Rokibul Hasan
-                    </p>
+                <div className="flex items-center gap-4 bg-white rounded-lg shadow-md overflow-hidden">
+                  <div className="relative w-28 h-28">
+                    <Image
+                      src={news5}
+                      alt="How VR is Enhancing Education"
+                      layout="fill"
+                      objectFit="cover"
+                    />
                   </div>
-                  <Image src={news5} alt="" width={200} height={126} />
+                  <div>
+                    <h5 className="text-sm font-semibold text-gray-800">
+                      How VR is Enhancing Education
+                    </h5>
+                    <p className="text-xs text-gray-500 mt-1">Mahmudul Hasan</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <button className="flex items-center mx-auto mt-6 lg:mt-10 gap-2 border hover:border-2 border-[#585962] px-6 py-3 rounded-3xl text-body-title text-white font-public">
-              <span>Read More</span>
-              <FaRegArrowAltCircleRight />
-            </button>
+            <div className="text-center mt-10">
+              <button className="flex items-center gap-2 border hover:border-2 border-[#585962] px-6 py-3 rounded-3xl text-body-title text-white mx-auto mt-10 font-public">
+                <span>Read More</span>
+                <FaRegArrowAltCircleRight />
+              </button>
+            </div>
           </div>
         </section>
       </div>

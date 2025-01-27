@@ -26,7 +26,7 @@ export default {
       addUtilities({});
       addComponents({
         ".text-title": {
-          "@apply text-[36px] lg:text-[80px] leading-[96px] font-semibold": {},
+          "@apply text-[36px] lg:text-[80px] font-semibold": {},
         },
         ".text-hero": {
           "@apply text-[40px] leading-[52px] font-normal": {},
