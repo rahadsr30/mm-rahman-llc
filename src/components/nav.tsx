@@ -14,10 +14,10 @@ const Navbar: React.FC = () => {
           <Image src={logo} alt="" width={247} height={32} />
 
           <div className="hidden md:flex space-x-8 text-[#F5F5F6] hover:text-white">
-            <a href="/home">Home</a>
-            <a href="/services">Services</a>
-            <a href="/brands">Our Brands</a>
-            <a href="/articles">Articles</a>
+            <a href="#home">Home</a>
+            <a href="#caseStudy">Case Study</a>
+            <a href="#brands">Our Brands</a>
+            <a href="#articles">Articles</a>
           </div>
 
           <div className="hidden md:flex">

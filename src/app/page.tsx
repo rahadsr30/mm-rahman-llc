@@ -80,7 +80,10 @@ export default function Home() {
     <main>
       <Navbar />
       <div>
-        <header className="bg-[url('/heroBg.png')] bg-cover bg-center">
+        <header
+          id="home"
+          className="bg-[url('/heroBg.png')] bg-cover bg-center"
+        >
           <div className="wrapper py-6 lg:py-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div>
               <p className="text-hero text-[#0A0A0B] mb-6 lg:mb-10 font-public">
@@ -105,7 +108,10 @@ export default function Home() {
           </div>
         </header>
 
-        <section className="bg-[url('/advantageBg.png')] bg-cover bg-center">
+        <section
+          id="caseStudy"
+          className="bg-[url('/advantageBg.png')] bg-cover bg-center"
+        >
           <div className="wrapper py-section ">
             <div className="flex justify-between lg:flex-row flex-col-reverse items-center gap-8 lg:gap-20">
               <div className="relative group w-full lg:w-1/2 overflow-hidden rounded-lg">
@@ -167,7 +173,7 @@ export default function Home() {
 
         <section className="bg-[url('/blankBg.png')] bg-cover bg-center py-section"></section>
 
-        <section className="bg-white py-section">
+        <section id="brands" className="bg-white py-section">
           <div className="wrapper">
             <h2 className="text-title text-[#3A3A3F] font-public">
               Our Brands
@@ -237,9 +243,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-black py-section">
+        <section id="articles" className="bg-black py-section">
           <div className="wrapper max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-2xl md:text-4xl font-bold text-white text-center">
+            <h1 className="text-title font-public text-white text-center">
               Latest News & Announcements
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
