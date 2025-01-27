@@ -66,7 +66,7 @@ export default function Home() {
                 grow and thrive in today&apos;s fast-paced world.
               </p>
 
-              <button className="flex items-center gap-2 border border-[#585962] px-6 py-3 rounded-3xl text-body-title text-[#0A0A0B] font-public">
+              <button className="flex items-center gap-2 border border-[#585962] hover:border-2 px-6 py-3 rounded-3xl text-body-title text-[#0A0A0B] font-public">
                 <span>Discover More</span>
                 <FaRegArrowAltCircleRight />
               </button>
@@ -104,7 +104,7 @@ export default function Home() {
                   height={100}
                   className="mx-auto mt-10"
                 />
-                <button className="flex items-center gap-2 border border-[#585962] px-6 py-3 rounded-3xl text-body-title text-white mx-auto mt-10 font-public">
+                <button className="flex items-center gap-2 border hover:border-2 border-[#585962] px-6 py-3 rounded-3xl text-body-title text-white mx-auto mt-10 font-public">
                   <span>Explore Now</span>
                   <FaRegArrowAltCircleRight />
                 </button>
@@ -134,7 +134,7 @@ export default function Home() {
                   height={100}
                   className="mx-auto mt-10"
                 />
-                <button className="flex items-center gap-2 border border-[#585962] px-6 py-3 rounded-3xl text-body-title text-white mx-auto mt-10 font-public">
+                <button className="flex items-center gap-2 border hover:border-2 border-[#585962] px-6 py-3 rounded-3xl text-body-title text-white mx-auto mt-10 font-public">
                   <span>Explore Now</span>
                   <FaRegArrowAltCircleRight />
                 </button>
@@ -161,7 +161,7 @@ export default function Home() {
 
         <section className="bg-black">
           <div className="wrapper py-section">
-            <h1 className="text-white font-bold text-2xl md:text-5xl">
+            <h1 className="text-[36px] lg:text-[80px] font-semibold text-white font-public">
               Latest News & Announcements
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-6 mt-14">
@@ -247,7 +247,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <button className="flex items-center mx-auto mt-6 lg:mt-10 gap-2 border border-[#585962] px-6 py-3 rounded-3xl text-body-title text-white font-public">
+            <button className="flex items-center mx-auto mt-6 lg:mt-10 gap-2 border hover:border-2 border-[#585962] px-6 py-3 rounded-3xl text-body-title text-white font-public">
               <span>Read More</span>
               <FaRegArrowAltCircleRight />
             </button>

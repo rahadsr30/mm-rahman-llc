@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           <Image src={logo} alt="" width={247} height={32} />
 
-          <div className="hidden md:flex space-x-8 text-[#F5F5F6]">
+          <div className="hidden md:flex space-x-8 text-[#F5F5F6] hover:text-white">
             <a href="/home">Home</a>
             <a href="/services">Services</a>
             <a href="/brands">Our Brands</a>
@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
           </div>
 
           <div className="hidden md:flex">
-            <button className="bg-[#13B2C7] text-white text-body-title px-6 py-3 rounded-3xl">
+            <button className="bg-[#13B2C7] hover:bg-[#0A9B9C] text-white text-body-title px-6 py-3 rounded-3xl">
               Get In Touch
             </button>
           </div>
