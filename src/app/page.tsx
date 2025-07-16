@@ -2,10 +2,8 @@ import Navbar from "@/components/nav";
 import Image from "next/image";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import dashbord from "@/assets/hero/dashbord.png";
-import rabfy from "@/assets/hero/icon2.png";
-import aiConsultence from "@/assets/hero/icon1.png";
-import rabfyCompo from "@/assets/rabfy.png";
-import aiCompo from "@/assets/ai.png";
+import rabfyLogo from "@/assets/logo/rabfyLogo.png";
+import vsenkLogo from "@/assets/logo/vsenkLogo.png";
 import news1 from "@/assets/news1.png";
 import news2 from "@/assets/news2.png";
 import news3 from "@/assets/news3.png";
@@ -100,8 +98,16 @@ export default function Home() {
               <div>
                 <Image src={dashbord} alt="" className="w-full" />
                 <div className="grid grid-cols-2 gap-4 mt-4">
-                  <Image src={rabfy} alt="" className="w-full" />
-                  <Image src={aiConsultence} alt="" className="w-full" />
+                  <Image
+                    src={rabfyLogo}
+                    alt=""
+                    className="w-full bg-black p-8"
+                  />
+                  <Image
+                    src={vsenkLogo}
+                    alt=""
+                    className="w-full bg-black p-8"
+                  />
                 </div>
               </div>
             </div>
@@ -182,7 +188,7 @@ export default function Home() {
               <div className="bg-black p-6">
                 <Image src={logo} alt="" width={247} height={32} />
                 <Image
-                  src={rabfyCompo}
+                  src={rabfyLogo}
                   alt=""
                   width={350}
                   height={100}
@@ -212,7 +218,7 @@ export default function Home() {
               <div className="bg-black p-6">
                 <Image src={logo} alt="" width={247} height={32} />
                 <Image
-                  src={aiCompo}
+                  src={vsenkLogo}
                   alt=""
                   width={350}
                   height={100}
